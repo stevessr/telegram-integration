@@ -12,6 +12,7 @@ builds:
       - linux
       - darwin
       - windows
+      - freebsd
 
 archives:
   - format: tar.gz
