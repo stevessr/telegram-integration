@@ -1,7 +1,12 @@
 name: Build artifacts
 
 on:
-  workflow_dispatch  
+  workflow_dispatch:
+    inputs:
+        version:
+        description: '要部署的版本号'
+        required: false
+        type: string
   push:
     tags:
       - "*"
